@@ -1,0 +1,182 @@
+@import url('https://use.fontawesome.com/releases/v6.5.1/css/all.css');
+
+/* ---------------------- ANIMATIONS ------------------------------- */
+/* Define the keyframes for the animation */
+
+@keyframes moving {
+    from{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* --------------------------------------------------------- */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #DAD3BE;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    transition: all 300ms ease-in-out;
+
+    .logo{
+        color: #4D3E2F;
+        font-size: 170%;
+        font-family: monospace;
+        text-decoration: none;
+        /* vertical-align: middle;
+        float: left;
+        margin-top: 1.5%;
+        position: absolute; */
+    }
+}
+
+body{
+    background-color: #DAD3BE;
+    width: 90%;
+    margin: auto;
+}
+
+/* scroll stuff */
+.scroll-down header{
+    transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up header{
+    z-index: 9999;
+    border-bottom: 1px solid #254336;
+    filter: drop-shadow(0px -10px 20px rgb(170, 170, 170));
+}
+
+
+
+/* navbar */
+.navbar{
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+
+    a:hover{
+        cursor: pointer;
+        color: #6B8A7A;
+    }
+}
+.nav-items{
+    padding: 30px;
+
+    a{
+        display: inline-block;
+        position: relative;
+        color: #4D3E2F;
+        font-size: 120%;
+        font-family: monospace;
+        text-decoration: none;
+        margin: 0 35px;
+    }
+
+    a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #6B8A7A;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    :hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+}
+
+.hero{
+    line-height: normal;
+    font-size: 150%;
+    z-index: 1;
+    min-height: 100vh;
+}
+
+
+/* ------------------------------ Research.html ------------------------------- */
+.research-container{
+    z-index: 1;
+    padding-top: 90px;
+    min-height: 100vh;
+
+    h1{
+        padding-bottom: 20px;
+    }
+}
+
+.research-tabs{
+    display: flex;
+}
+
+.tab-btn{
+    color: #000000;
+    background: #fff;
+    padding: 16px;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-top: solid 1px #0e76a8;
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+}
+/* #014b25 */
+.tab-btn.active{
+    background-color: #c0a491;
+    color: #000000;
+}
+
+.research-page{
+    background-color: #c0a491;
+    min-height: 80vh;
+    padding: 70px;
+
+    h2{
+        color: #000000;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    p{
+        padding: 30px 0;
+        color: #000000;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+.research-page .research-content{
+    display:none;
+    animation: moving .5s ease;
+}
+
+.research-content.active{
+    display:block;
+}
+
