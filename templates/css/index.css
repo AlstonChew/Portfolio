@@ -1,8 +1,10 @@
+@import url('https://use.fontawesome.com/releases/v6.5.1/css/all.css');
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: monospace, 'Times New Roman', Times, serif;;
 }
 
 html{
@@ -19,7 +21,6 @@ header{
     .logo{
         color: #4D3E2F;
         font-size: 170%;
-        font-family: monospace;
         text-decoration: none;
         /* vertical-align: middle;
         float: left;
@@ -47,7 +48,6 @@ body{
 
 
 /* ---------------------------------- ANIMATIONS --------------------------------- */
-@import url('https://use.fontawesome.com/releases/v6.5.1/css/all.css');
 
 /* Define the keyframes for the animation */
 @keyframes fadeIn {
@@ -139,7 +139,6 @@ body{
         position: relative;
         color: #4D3E2F;
         font-size: 120%;
-        font-family: monospace;
         text-decoration: none;
         margin: 0 35px;
     }
@@ -161,4 +160,15 @@ body{
         transform: scaleX(1);
         transform-origin: bottom left;
       }
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    background-color: #764e1b;
+    color: white;
+    text-align: center;
+    padding: 100px;
+
+    position: relative;
 }
