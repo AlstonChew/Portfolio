@@ -1,0 +1,20 @@
+Milestones to acheive in portfolio website:
+
+GOOD DESIGN
+- able to change from desktop to smartphone
+
+PERSONAL BRANDING
+- about me section (who you are, your skills, what drives me) ; your skills area can use rotation animation of the languages you use
+- add in contact information (includes email esp)
+
+SHOWCASE OF WORK
+- High quality samples of work, this includes case studies, projects, visual assets
+- Diversity of work (focus on different languages, personal projects, freelance work, collab work)
+- Context and Results (each project should include objectives, challenges, final outcome, bonus points will be highlighting measurable results or improvements)
+
+TECHNICAL COMPETENCE
+- Demonstratinon of skills (showcase what tools, technologies or techniques you did), this can be done through interactive demos, screenshot or code snippets
+- Code quality (commented, clean and optimized)
+
+USER EXPERIENCE
+- Ease of navigation
