@@ -9,6 +9,7 @@
 
 html{
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 header{
@@ -22,17 +23,14 @@ header{
         color: #4D3E2F;
         font-size: 170%;
         text-decoration: none;
-        /* vertical-align: middle;
-        float: left;
-        margin-top: 1.5%;
-        position: absolute; */
     }
 }
 
 body{
     background-color: #DAD3BE;
-    width: 90%;
-    margin: auto;
+    /* width: 90%;
+    margin: auto; */
+    min-height: 100%;
 }
 
 /* scroll stuff */
@@ -163,12 +161,12 @@ body{
 }
 
 footer {
-    width: 100%;
-    bottom: 0;
     background-color: #764e1b;
     color: white;
-    text-align: center;
-    padding: 100px;
-
     position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 100px;
 }
