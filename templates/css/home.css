@@ -199,12 +199,16 @@
 .card-list .card-link .badge{
     color: #5372F0;
     background: #dde4ff;
-    padding: 8px 16px;
+    padding: 8px 13px;
     font-size: 0.95rem;
     font-weight: 500;
-    margin: 16px 0 18px;
+    margin: 16px 2px 18px;
     width: fit-content;
     border-radius: 50px;
+}
+
+.badge {
+    float: left;
 }
 
 .card-list .card-link .badge.B{
@@ -236,6 +240,7 @@
     font-size: 1.19rem;
     color: rgb(255, 255, 255);
     font-weight: 600;
+    margin-top: 23%;
 }
 
 .card-list .card-link .card-button{
