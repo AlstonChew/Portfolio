@@ -178,28 +178,32 @@ body{
     margin-bottom: 30px; /* Default margin, will be adjusted based on direction */
 }
 
-/* Above and below position classes */
-.timeline-node.above {
-    margin-bottom: 180px;
-}
-
-.timeline-node.below {
-    margin-top: 180px;
-}
-
-.node-content {
-    background-color: #fff;
+.node-content.above {
+    background-color: #806746;
+    color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
+    margin-bottom: 90%;
+}
+
+.node-content.below {
+    background-color: #806746;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-top: 120%;
 }
 
 .timeline-node.above:before {
     content: '';
     position: absolute;
     left: 50%;
-    top: 130px;
+    /* top: 130px; */
+    top: 49%;
     width: 20px;
     height: 20px;
     background-color: #055301;
@@ -211,7 +215,8 @@ body{
     content: '';
     position: absolute;
     left: 50%;
-    top: -35px;
+    /* top: -35px; */
+    top: 49%;
     width: 20px;
     height: 20px;
     background-color: #055301;
@@ -222,7 +227,7 @@ body{
 /* Custom styling for the date */
 .date {
     font-size: 0.9em;
-    color: #888;
+    color: #254336;
     margin-top: 10px;
 }
 
@@ -249,9 +254,16 @@ body{
     }
 }
 
-.node-content.expanded {
-    background-color: #eaf2f8;
+.node-content-hidden {
+    content-visibility: hidden;
+}
+
+.node-content:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+
+    div {
+        content-visibility: visible;
+    }
 }
 
 /* ------------------------------------------------------ footer ------------------------------------------------------------ */

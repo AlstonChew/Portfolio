@@ -26,11 +26,3 @@ animations.animations();
         lastScroll = currentScroll
 
     })
-
-// timeline js below
-document.querySelectorAll('.timeline-node').forEach(node => {
-    node.addEventListener('click', function() {
-        const content = this.querySelector('.node-content');
-        content.classList.toggle('expanded');
-    });
-});
