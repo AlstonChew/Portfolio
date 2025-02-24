@@ -345,3 +345,7 @@
         list-style: none;
     }
 }
+
+.explist {
+    list-style: square;
+}
